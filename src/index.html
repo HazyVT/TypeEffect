@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TypeEffect</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+  </head>
+  <body class="crt">
+    <div class="heading">
+      <p id="logo" class="logo">TypeEffect</p>
+      <p class="wpm" id="wpm">WPM: 0</p>
+    </div>
+    
+    <div id="timercontainer" class=timer-container>
+      <p id="timer">30</p>
+    </div>
+    <div id="wordcontainer" class="word-container"></div>
+    
+    <input id="wordtyping" class="word-typing" type="text" onblur="if(true){this.focus();}" onfocus="this.value = this.value;" autofocus>
+    <label id="output"></label>
+    <button id="endbutton" class="start-button quit-button" onclick="window.close()">Quit</button>
+    <button id="backbutton" class="start-button back-button" onclick="window.location = 'home.html'">Back</button>
+  </body>
+</html>

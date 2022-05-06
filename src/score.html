@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeEffect</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="score.js"></script>
+</head>
+<body>
+    <div id="wpmcontainer" class="wpm-container">
+        <h1 style="color: white;">Words Per Minute: </h1>
+        <p id="wpm"></p>
+        <p id="pb"></p>
+    </div>
+
+    <div id="btc" class="btc">
+        <div id="buttoncontainer" class="button-container">
+            <button id="homebutton" class="start-button" onclick="window.location = 'home.html'">Home</button>
+            <button id="againbutton" class="start-button " onclick="newgame()">Again</button>
+            <button id="endbutton" class="start-button " onclick="window.close()">Quit</button>
+        </div>
+    </div>
+</body>
+</html>

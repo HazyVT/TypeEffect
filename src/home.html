@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeEffect</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+</head>
+<body>
+    <center>
+        <h1 style="color: white;">TypeEffect</h1>
+        <p style="color: white; font-style:italic; font-weight: 100;">The only typing app you will ever need</p>
+        <button class="start-button" onclick="window.location = 'index.html?mode='+document.getElementById('modetext').innerHTML">Start</button>
+        <h2 style="color: white; margin-top: 220px; margin-bottom: -8px; font-weight: 100;">Settings</h2>
+    </center>
+    <div id="settingscontainer" class="settings-container">
+        <button class="start-button" onclick="setMode()">Mode</button>
+        <label id="modetext" class="mode-text">TE Mode</label>
+    </div>
+
+    <button class="start-button quit-button" onclick="window.close()">Quit</button>
+</body>
+</html>
